@@ -1,0 +1,19 @@
+﻿@model DB.Models.Brand;
+@{
+
+}
+
+<div class="col-md-12">
+    <div class="row">
+        <form asp-action="Index" asp-controller="Brand" method="post">
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <label for="Name">Nombre </label>
+                    <input id="name" asp-for="Name" name="name" type="text" class="form-control" placeholder="Escriba los Nombres ..." required>
+                </div>
+
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
